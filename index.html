@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Excel to Json</h1>
+
+    <section>
+        <h1 id="titre-json">Selectionner le Quizz à transformer en Json</h1>
+        <label for="titre-json">Le téléchargement commencera ainsi tout de suite après avoir mis le fihier ici : </label>
+        <input id="inputField" type="file" accept=".xlsx">
+    </section>
+
+    <script lang="javascript" src="dist/xlsx.full.min.js"></script>
+<!--    <script lang="javascript" src="js/Answer.js"></script>-->
+<!--    <script lang="javascript" src="js/Question.js"></script>-->
+    <script lang="javascript" src="js/script.js"></script>
+
+</body>
+</html>
+
+<!--
+Le fichier excel doit automatiquement contenir QUESTIONS et POINST comme initulé de colonnes
+
+Les QUESTIONS peuvent contenir :
+    Q<Entier> <text> -> ce qui indique une question
+    <Entier>- <text> -> ce qui indique la réponse
+
+Les POINTS peuvent contenur :
+    -1, 0 ou 1 dans le cas ou la cellule est relié à une réponse
+    autre chose quand la cellule est relié à une question (Ce qui n'a pas de sens donc)
+-->
